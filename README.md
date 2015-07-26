@@ -13,7 +13,7 @@ a templating example
 @plural nouns: horses, squids, fjords, a murder of crows
 ``` 
 You can write anything as the first line, and thereafter include as many lines of definitions you want. 
-Definitions are defined with a @-symbol which is then followed by a name, and finished off by a semicolon. 
+Definitions are defined with a @-symbol which is then followed by a name, and finished off by a colon. 
 
 In addition to starting with an `@` and ending with `:`, all names also need to end with an s. 
 Which is completely arbitrary! But it also felt nice when using definitions as part of templates. :100:
@@ -23,7 +23,7 @@ Once you've declared all your definitions, you finish the group of definitions o
 the file contains templates. Or just junk, your choice. Or 50% templates, 50% junk. Any distribution of junk and templates, really.
 
 ### Templates
-Templates are also grouped under a name that ends with an s and a semicolon. The name is then followed by one template per line,
+Templates are also grouped under a name that ends with an s and a colon. The name is then followed by one template per line,
 with a newline ending that specific template group. Each template line can use the previously defined definitions to construct sentences. 
 
 ```
