@@ -67,6 +67,3 @@ meta templates:
 
 #### This is probably buggy so yeah, let me know??
 I also wrote this accidentally while making a bot today, so keep that in mind `O K` 
-
-#Known issues
-Only punctuation that currently works is `.` and `,` :sparkles:
