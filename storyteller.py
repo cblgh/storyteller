@@ -1,7 +1,17 @@
 from random import choice
+import re
+
 class Storyteller:
     def __init__(self, filePath):
         self.templateDict = {}
+        # Capture group:
+        #   Match the first character of the sentence 
+        #   or
+        #   Match "?", "!", or ".", and a space, and a single, random
+        #   character
+        self.sentenceRegex = r'(^.|[?!.] .)'
+        # Theoretically, I could do this with a regex. Practically, I'm not.
+        self.separators = set("?!.,")
 
         with open(filePath) as templates:
             lines = templates.readlines()
@@ -21,7 +31,7 @@ class Storyteller:
                 elif line in ["\n", "\r\n"]:
                     readAllDefinitions = True
                     templateName = ""
-                elif ":" in line:
+                elif ":" in line and not templateName:
                     templateName = "@" + line.strip(":\n\r")
                     self.templateDict[templateName] = []
                     continue
@@ -40,10 +50,11 @@ class Storyteller:
         compositeToken = ""
         hasIndefiniteArticle = False
 
+
         for index, token in enumerate(tokenizedTemplate):
             word = token
             separator = ""
-            if "," in token or "." in token:
+            if any((c in self.separators) for c in token):
                 separator = token[-1]
                 token = token[:-1]
             if "@" in token:
@@ -84,8 +95,12 @@ class Storyteller:
     def tellStory(self):
         template = self.pick("@meta templates")
         story = self.populateTemplate(template)
-        return ". ".join([word[0:1].upper() + word[1:] for word in story.split(". ")])
+        # (r'(^.|[?!.] .)' 
+        # https://lund.zozs.se/nb/2015-07-26-174041_873x55_scrot.png
 
+        return re.sub(self.sentenceRegex, lambda m: m.group(0).upper(), story)
+ 
 if __name__ == "__main__":
-    storyteller = Storyteller("templates.txt")
-    print storyteller.tellStory()
+    storyteller = Storyteller("trite-example.txt")
+    story = storyteller.tellStory()
+    print story

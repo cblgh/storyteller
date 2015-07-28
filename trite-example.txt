@@ -4,13 +4,14 @@ a templating example
 
 a template header, it's completely unnecessary and can be viewed as a comment
 templates:
-i am @verb with @plural noun
+I am @verb with @plural noun
 @plural noun hate @verb
 
 more templates:
-@plural noun, @plural noun, and @plural noun
-you should have a couple of @plural noun go @verb with you
+you.... you should have a couple of @plural noun go @verb with you
 
 meta templates:
-@more template. Also fyi @template.
-@template. @template.
+Did You Know: @template! @template.
+
+
+@more template! Also fyi @template.
