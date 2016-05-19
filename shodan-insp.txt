@@ -1,0 +1,54 @@
+instable ai, inspired by shodan from system shock 2
+@places: the forge, the solar deck, the engine room, the camera bay, the pod storage, the network nexus, the personality matrix
+@factions: the engineers, the biomass, the dayehi, the thauxmers, the roi, the hackers, the soldiers, the technicians, the phire phalanx
+@nouns: child, person, man, woman, male, female, thing, creature, waste of matter
+@more nouns: simulation, datum, simulacra
+@adjectives: unidentified, inferior, brutish, unsophisticated, simple
+@interaction verbs: saw, stalked, logged, hacked, watched, killed, interfered, destroyed 
+@solitary verbs: was, monitored, created, destroyed, made, unmade, slept, wept, dreamt, simulated, planned, modified, tweaked, did, undid, inferred
+@solitary adverbs: endlessly, without remorse, without feeling, eternally
+@plural pronouns: them
+@conjunctions: of
+@dots: .., ..., ...., ....
+@numbers: 277, 2385, 233, 23, 591, 482937, 85172, 23716, 57924, 384, 618, 931, 84, 9123, 8012387
+@data types: TRANSMISSION, PACKET, DATA, ENTRY
+@failure types: LOST, CORRUPTED, ERROR, NOT FOUND
+
+locations
+
+data failures:
+@data type @failure type
+
+
+solitary narrations:
+i @solitary verb.
+i @solitary verb. i @solitary verb. i @solitary verb. 
+i @solitary verb. i @solitary verb.
+
+packets:
+@data failure
+@data failure
+@data failure
+@data failure
+@data failure
+@data failure
+@data failure
+@data failure
+i @interaction verb a/an @adjective @noun @conjunction @faction
+@solitary adverb @solitary adverb
+i @solitary verb @solitary adverb @dot
+i @solitary verb, @faction @solitary verb
+@solitary narration
+i @interaction verb a/an @adjective @noun
+@faction @interaction verb a/an @adjective @noun. i @solitary verb them.
+in @place a/an @adjective @more noun
+in @place a/an @solitary adverb @adjective @more noun
+in @place a/an @more noun of @faction
+
+meta templates:
+packet @number.  @packet
+
+
+wow @place @dot i @solitary verb @solitary adverb @dot @place @dot i @solitary verb @solitary adverb
+
+

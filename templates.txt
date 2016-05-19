@@ -1,0 +1,66 @@
+backpacker bot, inspired by @coastpathing
+@places: Lazqi maze, a cavern, the well, Ughlxizg, Asgulz, Tyclot, Rzulk, Tvuxao, Vualz, Gaol, Gaxoa, Zlaez, Ugail, Goeuz, Gueizk, Zugklef, Ofylk, Acuz, Tucozi, Agouxl, Gzuql, Vzhy
+@emotions: happy, sad, pensive, quiet, nihilistic, beautiful, human, tired, obsessed, curious, adventurous
+@adverbs: beautiful, wonderful, interesting, ugly, curious, interesting, horrible, personable, old, young, massive
+@adjectives: beautiful, small, unpredictable, maze-like, impenetrable, curious, long, lonely, eventful
+@nouns: man, woman, bird, trader, snake, mountain, twig, branch, riverlet, snail, pebble, rock, wolf, wyrm, tree
+@definite nouns: the world, nature, the universe, the surrounding area, the journey, one's purpose, life
+@indefinite nouns: paths, journeys, teas, composers, nothing really, loved ones, enemies, rocks, books, roots, celestial objects
+@investigational verbs: saw, thought about, followed, overheard, listened to, questioned
+@collective nouns:
+@conversational verbs: spoke, whispered, talked, mused, argued
+@solitary verbs: reading, resting, pausing, slept, traveling, cooking
+@prepositions: beside, next to, behind, opposite
+@encountered verbs: met, came across, joined, came upon, encountered
+
+
+locations
+starting locations:
+at @place
+visiting a/an @adverb @noun
+from @place to @place
+wound up at @place
+
+intermediate locations:
+stopping near @place
+stopping at @place
+spending the night near @place
+resting at @place
+close to @place
+
+ending locations:
+@intermediate location
+@place for the night
+finally at @place
+stumbled across @place
+wandered into @place
+
+event templates
+starting events:
+@encountered verb a/an @noun, @conversational verb about @indefinite noun
+@investigational verb a/an @adverb @noun
+@solitary verb @preposition a/an @adverb @noun
+
+ending events:
+feeling @emotion
+found a/an @noun
+@definite noun is @adjective
+want to find a @noun
+befriended a @noun
+
+
+meta templates:
+@starting location. @starting event.
+@starting event. @ending location.
+@ending location. @starting event.
+@starting event. @starting location.
+@starting location, @ending location.
+@place, @ending event.
+@starting event. Will be @intermediate location.
+@ending event. @starting location.
+@starting location. @ending event.
+@starting event. @ending event.
+@starting event.
+
+
+

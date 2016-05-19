@@ -1,4 +1,5 @@
 from random import choice
+import sys
 import re
 
 class Storyteller:
@@ -11,7 +12,11 @@ class Storyteller:
         #   character
         self.sentenceRegex = r'(^.|[?!.] .)'
         # Theoretically, I could do this with a regex. Practically, I'm not.
-        self.separators = set("?!.,")
+        self.separators = set("?!.-,")
+
+        #TODO: add null-space character; interpreted as no space between two
+        # two things; OR split on @ instead of on separators, or something q.q
+        # i want @color#beard ->Redbeard, Bluebeard etc
 
         with open(filePath) as templates:
             lines = templates.readlines()
@@ -49,7 +54,6 @@ class Storyteller:
         lookingForCompositeToken = False
         compositeToken = ""
         hasIndefiniteArticle = False
-
 
         for index, token in enumerate(tokenizedTemplate):
             word = token
@@ -101,6 +105,13 @@ class Storyteller:
         return re.sub(self.sentenceRegex, lambda m: m.group(0).upper(), story)
  
 if __name__ == "__main__":
-    storyteller = Storyteller("trite-example.txt")
-    story = storyteller.tellStory()
-    print story
+    if len(sys.argv) < 2:
+        sys.exit("usage: python storyteller.py 'template-file.txt'")
+
+    storyteller = Storyteller(sys.argv[1])
+    names = []
+    for i in xrange(50):
+        story = storyteller.tellStory()
+        names.append(story)
+    for name in set(names):
+        print name

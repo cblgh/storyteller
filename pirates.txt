@@ -1,0 +1,39 @@
+pirate name generator
+@first names: Alexander, Alex, Rebecka, Ronaldo, Joseph, Francine, Jacqueline, Francis, Howl, James, Ching, Mary, Enrique, Ragnar, Charlotte, Cervantes, Miguel, Heinrich, Isabel, Juan, Jack, Jezebel, Denise, Nami, Pete, Sonja, Anya, Ronja, Emilio, Minerva, Joan, Tess, Keira, Tetra, William, Vyse, Jamie, Zhang, Grace, John, Valentina, Elena, Victoria, Constance,  Gertrude, Frances, Amelia, Hanna, Junko, Audrey, Wirt, Robin, Christina, Hari, Lauren, Sven, Molly, Julia, Emily, Ulrike, Johssy, Gilliam, Jean, Quinn, Zoe, Tobias, Quinlan, Paul, Rowan, Katie, Jim, Arabella
+@surnames: Gonzalez, Suarez, Steel, Dumas, Cristo, Brower, de Poniard, de Chevalier, au Montaigne, Barbarossa, Shih, Mulligan, Adams, Aubéry, Crow, Cooper, de Berry, de Cervantes, Ramsey, Grog, Rogers, Threep, Hook, Khan, Lafitte, Morgan, Johnson, Chang, Blood, Bishop, Hoang, Salgari, Jacques, Singh, Heng, Lucrezia, Blackwell, Keene, Wharton, Perkins, Tabei, Wortham, Leto, Fong, Smith, Svärd, Schwartz, Love, Stone, Glass, To, Rose
+@body parts: Foot, Toe, Ear, Head, Leg, Knuckle, Hand, Finger, Beard, Eye, Nose, Arm, Shoulder
+@colors: Black, Blue, Indigo, Pink, Purple, Azure, White, Gray, Red, Maroon, Sarcoline, Xanadu, Amaranth, Crimson, Scarlet, Jade, Olive, Potato, Roan
+@roles: Trader, Bard, Pirate, Cheap, Brawler, Strong, Cowardly, Old, Young, Shipmate, Sword, Gilded, Drunk, Angry, Fat
+@numbers: One, Two, Three, Four, Five, Six
+@nicknames: Bait, Glass, Bottle, Drunk, Squinty, Jack, Barrel, Gold, Pockets, Haggard, Rusty, Falchion, Magician, Blood, Gallows, Eye, Gin, Lemon, Crate, Skelly, Mug, Buckle, Boots, Snake, Son, Charm, Constable, Doctor, Maiden, Silver Tongue, Lockpick, Happy, Round, Cannon, Stitches, Coarse, Ring, Oyster, Pearl
+
+lt3 templates:
+No
+One
+Two
+
+lt8 templates:
+One 
+Two
+Three
+Four
+Five
+Six
+Seven
+
+meta templates:
+@lt3 template Beard
+@lt3 template Toe
+@lt3 template Eyed @first name
+@lt8 template Toed @surname
+@lt8 template Knuckle @first name
+@lt8 template Finger @first name
+@color Beard
+@color @first name
+@nickname the @role
+@first name @surname
+@first name ' @nickname ' @surname 
+@first name the @role
+@surname the @role
+@number @body part the @role
+@number @body part @surname

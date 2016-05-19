@@ -1,0 +1,8 @@
+a templating example
+@xXxs: xXx, yYy, dDd
+@preps: FOR THE, UNTO THY, THINE
+@invocations: GRESHUNKEL, WALLY, SHITHOUSE, MERVEILLES, THE VOID
+
+meta templates:
+@xXx @invocation @prep @invocation @xXx
+@xXx @xXx @invocation @prep @invocation @xXx @xXx 
